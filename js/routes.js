@@ -1,0 +1,10 @@
+var __VueZenRoutes = [ { path:"/newPage",
+    component:newPage },
+  { path:"/pageOne",
+    component:pageOne,
+    meta:{ isDefault:true } },
+  { path:"*",
+    component:pageOne,
+    meta:{ isDefault:true } },
+  { path:"/pageTwo",
+    component:pageTwo } ]

@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+
+.sdk*
+.sign
+*.wgt
+.rds_delta
+components/compiled.js
+node_modules/
+.tproject
+.settings/
