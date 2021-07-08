@@ -36,6 +36,7 @@ const __VueZenRouter = new VueRouter({routes: __VueZenRoutes});
 // child page components to share them
 // See https://vuejs.org/v2/guide/ for more info
 // Also handles top level events available to all pages
+import { createRequire } from 'module';
 const __VueZenApp = new Vue({
 	el: "#app-mount",
 	store: __VueZenStore,
@@ -56,6 +57,7 @@ const __VueZenApp = new Vue({
 		}
 	},
 	mounted: function() {
+		createRequire('dotenv').config();
 		this.backButtonHandler = new VueZen.BackButtonHandler(this.$router);
 		this.rotaryHandler.initPageScroller();		
 	}

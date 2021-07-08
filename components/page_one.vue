@@ -37,7 +37,7 @@ methods: {
 		new VueZen.Ajax({
 			method: "GET",
 			context: this,
-			url: 'http://httpbin.org/get',
+			url: `https://api.winnipegtransit.com/v3/stops/10064.json?api-key=${process.env.API_KEY}`,
 			success: function(result) {
 				this.ajax_response = result.responseJSON;
 			}
